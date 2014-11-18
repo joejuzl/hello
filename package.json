@@ -1,0 +1,10 @@
+{
+  "name": "hello",
+  "private": true,
+  "version": "0.0.1",
+  "description": "hello world",
+  "author": "Joe",
+  "dependencies": {
+    "http": "0.0.0"
+  }
+}
