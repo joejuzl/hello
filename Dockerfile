@@ -1,3 +1,5 @@
-FROM node:0.10-onbuild
+FROM node
 
 EXPOSE 8000
+
+ENTRYPOINT ['node', 'app.js']
