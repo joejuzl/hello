@@ -3,7 +3,7 @@ var request = require('request');
 var app = express();
 
 
-var address = "http://"+process.env.BACK_PORT_9005_TCP_ADDR+":"+process.env.BACK_PORT_9005_TCP_PORT;
+var address = "http://"+process.env.BACKSERVICE_SERVICE_HOST+":"+process.env.BACKSERVICE_SERVICE_PORT;
 
 
 app.get('/', function(req, res) {
@@ -13,5 +13,4 @@ app.get('/', function(req, res) {
   });
 });
 
-//app.listen(process.env.PORT || 4730);
-app.listen(8000);
+app.listen(process.env.PORT || 8000);
