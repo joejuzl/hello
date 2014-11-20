@@ -3,7 +3,7 @@ var request = require('request');
 var app = express();
 
 
-var address = 'http://localhost:9005/';
+var address = "http://"+process.env.BACK_PORT_9005_TCP_ADDR+":"+process.env.BACK_PORT_9005_TCP_PORT;
 
 
 app.get('/', function(req, res) {
