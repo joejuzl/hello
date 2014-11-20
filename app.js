@@ -6,10 +6,11 @@ var app = express();
 var address = process.env.BACK_PORT;
 
 
-app.get('/', function(req,res) {
-	request(address, function (error, response, body) {
-		res.send(body);
-	});
+app.get('/', function(req, res) {
+  request(address, function(error, response, body) {
+    res.type('text/plain');
+    res.send(body);
+  });
 });
 
 //app.listen(process.env.PORT || 4730);
