@@ -5,7 +5,6 @@
   "description": "hello world",
   "author": "Joe",
   "dependencies": {
-    "express": "*",
-    "request":  "*"
+    "httpp-proxy": "*"
   }
 }
